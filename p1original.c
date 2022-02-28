@@ -1,3 +1,4 @@
+// while runing the program with console use "gcc p1original.c -lm -o p1original"
 #include <stdio.h>
 #include <math.h>
 void input(int *x1,int *y1,int *x2,int *y2)
