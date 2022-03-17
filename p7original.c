@@ -27,7 +27,7 @@ float distance;
 Point input_point()
 {
   Point p;
-  printf("Enter the first point(x,y):\n");
+  printf("Enter the  point(x,y):\n");
   scanf("%f%f",&p.x,&p.y);
   return p;
 }
