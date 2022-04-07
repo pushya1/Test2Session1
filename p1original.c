@@ -6,21 +6,20 @@ void input(int *x1,int *y1,int *x2,int *y2)
   printf("enter the two ponts:\n");
   scanf("%d%d%d%d",x1,y1,x2,y2);
 }
-void find_distance(int x1,int y1,int x2,int y2,float *mr)
+void find_distance(int x1,int y1,int x2,int y2,float *area)
 {
-  int r;
-  r=((y2-y1)*(y2-y1))+((x2-x1)*(x2-x1));
-  *mr=sqrt(r);
+ *area=sqrt((y2-y1)*(y2-y1)+(x2-x1)*(x2-x1));
+ 
 }
-void output(float *mr)
+void output(float *area)
 {
-  printf("%f",*mr);
+  printf("%f",*area);
 }
 int main()
 {
   int x1,y1,x2,y2;
-  float mr;
+  float area;
   input(&x1,&y1,&x2,&y2);
-  find_distance(x1,y1,x2,y2,&mr);
-  output(&mr);
+  find_distance(x1,y1,x2,y2,&area);
+  output(&area);
 }
